@@ -33,6 +33,15 @@ const HeroSection = () => {
       {/* Main content */}
       <div className="relative z-10 text-center max-w-6xl mx-auto px-6">
         <div className={`transition-all duration-1000 ${isVisible ? 'rise-animation' : 'opacity-0'}`}>
+          {/* Logo */}
+          <div className="flex justify-center mb-8">
+            <img 
+              src="/lovable-uploads/a076f2e0-db85-4c93-b4d8-f479c4c3aaf3.png" 
+              alt="Gear Up Marketing Solutions Logo" 
+              className="w-24 h-24 md:w-32 md:h-32 animate-pulse-glow"
+            />
+          </div>
+
           {/* Company name */}
           <h1 className="text-6xl md:text-8xl font-bold mb-6 tracking-tight">
             Gear Up
