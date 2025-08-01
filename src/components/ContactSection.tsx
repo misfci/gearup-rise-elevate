@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
-import { ArrowUpRight, Mail, Phone, MapPin, Send } from 'lucide-react';
+import { ArrowUpRight, Mail, Phone, MapPin, Send, MessageCircle } from 'lucide-react';
 
 const ContactSection = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -157,17 +157,20 @@ const ContactSection = () => {
 
             {/* Additional CTA */}
             <div className="premium-card p-8 rounded-2xl text-center">
-              <h4 className="text-xl font-semibold mb-4">Prefer a quick call?</h4>
+              <h4 className="text-xl font-semibold mb-4">Prefer Contact on WhatsApp?</h4>
               <p className="text-muted-foreground mb-6">
-                Schedule a 15-minute discovery call to discuss your project and see how we can help.
+                Let's talk directly on WhatsApp and explore how we can elevate your brand together.
               </p>
               <Button 
                 variant="outline" 
                 size="lg"
                 className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-3 transition-all duration-300"
+                asChild
               >
-                Schedule a Call
-                <ArrowUpRight className="ml-2 w-5 h-5" />
+                <a href="https://wa.me/201008165790" target="_blank" rel="noopener noreferrer">
+                  <MessageCircle className="mr-2 w-5 h-5" />
+                  Contact on WhatsApp
+                </a>
               </Button>
             </div>
           </div>

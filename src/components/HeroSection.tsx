@@ -67,19 +67,16 @@ const HeroSection = () => {
             and data-driven marketing solutions that elevate your presence in the digital landscape.
           </p>
 
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <Button 
-              size="lg" 
-              className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4 text-lg font-semibold transition-all duration-300 hover:scale-105 glow-effect"
-            >
-              Start Your Journey
-              <ArrowUp className="ml-2 w-5 h-5" />
-            </Button>
+          {/* CTA Button */}
+          <div className="flex justify-center">
             <Button 
               variant="outline" 
               size="lg"
               className="border-primary text-primary hover:bg-primary hover:text-primary-foreground px-8 py-4 text-lg transition-all duration-300"
+              onClick={() => {
+                const element = document.getElementById('our-clients');
+                element?.scrollIntoView({ behavior: 'smooth' });
+              }}
             >
               View Our Work
             </Button>
